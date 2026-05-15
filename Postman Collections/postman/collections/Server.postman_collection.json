@@ -1,0 +1,27 @@
+{
+  "info": {
+    "_postman_id": "0d3cace2-650f-46cd-b8f3-daf168e6e337",
+    "name": "Server",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Root",
+      "id": "6c5372ff-9bda-432f-b1f3-7d517dad3049",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local url}}/",
+          "host": [
+            "{{local url}}"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

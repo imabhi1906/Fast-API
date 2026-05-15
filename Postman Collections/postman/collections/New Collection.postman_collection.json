@@ -1,0 +1,98 @@
+{
+  "info": {
+    "_postman_id": "e8c9c98d-b6d4-4c7d-a1c2-7216f172f257",
+    "name": "User",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "all users",
+      "id": "fbbac1be-62b8-4200-902a-76421abcd630",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local url}}/users",
+          "host": [
+            "{{local url}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create user",
+      "id": "c8cbfaac-126a-4abb-ae37-78e8d44abdad",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\" : \"ashley\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{local url}}/users",
+          "host": [
+            "{{local url}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user by id",
+      "id": "bb39f252-63c3-40c4-8f2b-2b67c93cff04",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local url}}/users/3",
+          "host": [
+            "{{local url}}"
+          ],
+          "path": [
+            "users",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search",
+      "id": "e4750a43-d7b6-4681-911e-99be51de5017",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{local url}}/search?q=ch",
+          "host": [
+            "{{local url}}"
+          ],
+          "path": [
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "ch",
+              "uuid": "e2c6137f-4d6a-4332-878f-3209405336b0"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
